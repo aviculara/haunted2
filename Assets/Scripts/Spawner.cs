@@ -30,7 +30,7 @@ public class Spawner : MonoBehaviour
         if(percent < scrollChance)
         {
             float randx = Random.Range(-2.4f, 2.4f);
-            float randy = Random.Range(-1.2f, 4.37f);
+            float randy = Random.Range(-1.2f, 3.96f);
             Vector3 randPos = new Vector3(randx, randy);
 
             GameObject spawnedObject = Instantiate(scrollPrefab, randPos, Quaternion.identity);
@@ -40,7 +40,7 @@ public class Spawner : MonoBehaviour
         else if(percent < scrollChance + moneyBagChance)
         {
             float randx = Random.Range(-2.42f, 2.42f);
-            float randy = Random.Range(-1.2f, 4.37f);
+            float randy = Random.Range(-1.2f, 3.94f);
             Vector3 randPos = new Vector3(randx, randy);
 
             GameObject spawnedObject = Instantiate(moneyBagPrefab, randPos, Quaternion.identity);
@@ -50,7 +50,7 @@ public class Spawner : MonoBehaviour
         else
         {
             float randx = Random.Range(-2.44f, 2.41f);
-            float randy = Random.Range(-1.22f, 4.42f);
+            float randy = Random.Range(-1.22f, 4.0f);
             Vector3 randPos = new Vector3(randx, randy);
 
             GameObject spawnedObject = Instantiate(coinPrefab, randPos, Quaternion.identity);
